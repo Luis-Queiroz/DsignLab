@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dsign Lab — Identidade, Artes e Conteúdo</title>
+  <meta name="description" content="Dsign Lab, estúdio de design gráfico. Identidade visual, artes e conteúdo para redes sociais.">
+  <meta name="theme-color" content="#111111">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topo">
+  <a href="#inicio" class="topo__marca" aria-label="Dsign Lab, início">
+    <img src="assets/img/logo-dsignlab.png" alt="Dsign Lab" width="502" height="270">
+  </a>
+  <nav class="topo__nav" aria-label="Principal">
+    <a href="#servicos">Serviços</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#processo">Processo</a>
+    <a href="#sobre">Sobre</a>
+  </nav>
+  <a href="#contato" class="botao botao--cheio topo__cta">Iniciar projeto</a>
+</header>
+
+<main id="inicio">
+
+  <section id="servicos" class="servicos">
+    <div class="servicos__intro">
+      <p class="servicos__lead">Estúdio de design gráfico. Crio marcas, peças e conteúdo para quem quer ser lembrado — escolha por onde começar.</p>
+      <p class="servicos__dica">Toque em um serviço para ver o que entra</p>
+    </div>
+
+    <div class="servicos__lista" role="group" aria-label="Serviços">
+      <button type="button" class="servico is-ativo" data-servico="identidade" aria-pressed="true">
+        <svg class="servico__seta" viewBox="0 0 40 64" aria-hidden="true"><polyline points="6,8 34,32 6,56"/></svg>
+        <span class="servico__nome">Identidade</span>
+      </button>
+      <button type="button" class="servico" data-servico="artes" aria-pressed="false">
+        <svg class="servico__seta" viewBox="0 0 40 64" aria-hidden="true"><polyline points="6,8 34,32 6,56"/></svg>
+        <span class="servico__nome">Artes</span>
+      </button>
+      <button type="button" class="servico" data-servico="conteudo" aria-pressed="false">
+        <svg class="servico__seta" viewBox="0 0 40 64" aria-hidden="true"><polyline points="6,8 34,32 6,56"/></svg>
+        <span class="servico__nome">Conteúdo</span>
+      </button>
+    </div>
+
+    <div class="painel" aria-live="polite">
+      <div class="painel__topo">
+        <h2 class="painel__titulo" id="painel-titulo">Identidade</h2>
+        <span class="painel__pos" id="painel-pos">1 de 3</span>
+      </div>
+      <p class="painel__texto" id="painel-texto">Marcas que as pessoas reconhecem de longe: do símbolo ao jeito de aparecer em cada lugar.</p>
+      <ul class="painel__itens" id="painel-itens">
+        <li>Logotipo e variações</li>
+        <li>Paleta de cores e tipografia</li>
+        <li>Manual da marca</li>
+        <li>Papelaria e aplicações</li>
+      </ul>
+      <a href="#portfolio" class="painel__link" id="painel-link">Ver projetos de Identidade</a>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <div class="portfolio__topo">
+      <div>
+        <h2 class="titulo-secao">Portfólio</h2>
+        <p class="portfolio__sub">Uma seleção de trabalhos recentes. Filtre por tipo de serviço.</p>
+      </div>
+      <div class="filtros" role="group" aria-label="Filtrar projetos">
+        <button type="button" class="filtro is-ativo" data-filtro="todos" aria-pressed="true">Todos</button>
+        <button type="button" class="filtro" data-filtro="identidade" aria-pressed="false">Identidade</button>
+        <button type="button" class="filtro" data-filtro="artes" aria-pressed="false">Artes</button>
+      </div>
+    </div>
+
+    <div class="grade">
+      <article class="projeto projeto--7" data-cat="identidade">
+        <img src="assets/img/livia-cartao.jpg" alt="Cartões de visita da identidade Livia Dias Advocacia" loading="lazy">
+        <div class="projeto__legenda"><h3>Livia Dias — cartão de visita</h3><span>Identidade</span></div>
+      </article>
+      <article class="projeto projeto--5" data-cat="artes">
+        <img src="assets/img/blast-mockup.jpg" alt="Mão segurando celular com a tela personalizada da Blast no app de delivery" loading="lazy" style="object-position: center 45%;">
+        <div class="projeto__legenda"><h3>Blast — tela do app de delivery</h3><span>Artes</span></div>
+      </article>
+      <article class="projeto projeto--5" data-cat="identidade">
+        <img src="assets/img/arketh-logo.jpg" alt="Logotipo Arketh Fotografia" loading="lazy">
+        <div class="projeto__legenda"><h3>Arketh Fotografia — logotipo</h3><span>Identidade</span></div>
+      </article>
+      <article class="projeto projeto--7" data-cat="identidade">
+        <img src="assets/img/livia-logo.jpg" alt="Logotipo Livia Dias Advocacia e Consultoria Jurídica" loading="lazy">
+        <div class="projeto__legenda"><h3>Livia Dias — logotipo</h3><span>Identidade</span></div>
+      </article>
+      <article class="projeto projeto--5" data-cat="identidade">
+        <img src="assets/img/me-fisio.jpg" alt="Monograma ME com coluna vertebral em dourado sobre fundo verde" loading="lazy">
+        <div class="projeto__legenda"><h3>ME — conceito para fisioterapia</h3><span>Identidade</span></div>
+      </article>
+      <article class="projeto projeto--7" data-cat="artes">
+        <img src="assets/img/blast-tela.jpg" alt="Tela da Blast com opções Delivery, Retirada e Fidelidade sobre fundo de hambúrgueres" loading="lazy">
+        <div class="projeto__legenda"><h3>Blast — arte da tela inicial</h3><span>Artes</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="processo" class="processo">
+    <h2 class="titulo-secao">Como funciona</h2>
+    <ol class="passos">
+      <li><span>Passo 1</span><h3>Briefing</h3><p>Uma conversa para entender o seu negócio, o público e o que precisa ser feito.</p></li>
+      <li><span>Passo 2</span><h3>Conceito</h3><p>Pesquisa de referências e a direção visual que vai guiar o projeto.</p></li>
+      <li><span>Passo 3</span><h3>Criação</h3><p>Desenvolvimento das peças, com rodadas de ajuste junto com você.</p></li>
+      <li class="passos__final"><span>Passo 4</span><h3>Entrega</h3><p>Arquivos finais organizados e prontos para imprimir, postar ou aplicar.</p></li>
+    </ol>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <div class="sobre__logo"><img src="assets/img/logo-dsignlab.png" alt="Logo Dsign Lab" loading="lazy" width="502" height="270"></div>
+    <div class="sobre__texto">
+      <h2 class="titulo-secao titulo-secao--menor">Um laboratório de ideias visuais</h2>
+      <p>O Dsign Lab nasceu para testar, ajustar e entregar design que funciona no mundo real — da marca ao post de amanhã.</p>
+      <p class="sobre__extra">[Conte em duas ou três linhas quem você é, onde atende e há quanto tempo trabalha com design.]</p>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2 class="contato__titulo">Tem um projeto em mente? Vamos tirar do papel.</h2>
+    <div class="contato__base">
+      <div class="contato__botoes">
+        <a href="https://wa.me/5543991535209" class="botao botao--cheio botao--grande" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        <a href="mailto:dsignlabestudio@gmail.com" class="botao botao--contorno botao--grande">Enviar e-mail</a>
+      </div>
+      <dl class="contato__dados">
+        <div><dt>WhatsApp</dt><dd><a href="https://wa.me/5543991535209" target="_blank" rel="noopener">(43) 9 9153-5209</a></dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://instagram.com/dsignlab_estudio" target="_blank" rel="noopener">@dsignlab_estudio</a></dd></div>
+        <div><dt>E-mail</dt><dd><a href="mailto:dsignlabestudio@gmail.com">dsignlabestudio@gmail.com</a></dd></div>
+      </dl>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <img src="assets/img/logo-dsignlab.png" alt="Dsign Lab" width="502" height="270" loading="lazy">
+  <span>Identidade &gt; Artes &gt; Conteúdo</span>
+  <span>© <span id="ano">2026</span> Dsign Lab</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
