@@ -5,18 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dsign Lab — Identidade, Artes e Conteúdo</title>
   <meta name="description" content="Dsign Lab, estúdio de design gráfico. Identidade visual, artes e conteúdo para redes sociais.">
-  <meta name="theme-color" content="#111111">
+  <meta name="theme-color" content="#ECEEF1">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Paleta clara, inspirada no Linktree da Dsign Lab */
+    :root {
+      --fundo: #ECEEF1;
+      --fundo-2: #E3E5E9;
+      --superficie: #FFFFFF;
+      --linha: #D5D7DC;
+      --linha-forte: #B8BBC2;
+      --texto: #111111;
+      --texto-2: #3A3B3E;
+      --texto-3: #505257;
+      --texto-4: #5E6066;
+      --apagado: #85878D;
+      --destaque: #FF4E00;
+      --destaque-texto: #C23A00;
+    }
+    .topo { background: rgba(236, 238, 241, .92); border-bottom-color: var(--linha); }
+    .rodape { border-top-color: var(--linha); }
+    .servico__seta { stroke: var(--linha-forte); }
+    .servico.is-ativo .servico__seta { stroke: var(--destaque); }
+    .botao--cheio:hover { background: #111111; color: #FFFFFF; }
+    .filtro.is-ativo { background: #111111; color: #FFFFFF; border-color: #111111; }
+    .painel__link, .passos span, .projeto__legenda span { color: var(--destaque-texto); }
+    .passos li.passos__final { border-top-color: var(--destaque); }
+  </style>
 </head>
 <body>
 
 <header class="topo">
   <a href="#inicio" class="topo__marca" aria-label="Dsign Lab, início">
-    <img src="assets/img/logo-dsignlab.png" alt="Dsign Lab" width="477" height="242">
+    <img src="assets/img/logo-dsignlab-escura.png" alt="Dsign Lab" width="477" height="242">
   </a>
   <nav class="topo__nav" aria-label="Principal">
     <a href="#servicos">Serviços</a>
@@ -144,7 +169,7 @@
 </main>
 
 <footer class="rodape">
-  <img src="assets/img/logo-dsignlab.png" alt="Dsign Lab" width="477" height="242" loading="lazy">
+  <img src="assets/img/logo-dsignlab-escura.png" alt="Dsign Lab" width="477" height="242" loading="lazy">
   <span>Identidade &bull; Artes &bull; Conteúdo</span>
   <span>© <span id="ano">2026</span> Dsign Lab</span>
 </footer>
