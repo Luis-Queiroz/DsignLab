@@ -35,6 +35,10 @@
     .filtro.is-ativo { background: #111111; color: #FFFFFF; border-color: #111111; }
     .painel__link, .passos span, .projeto__legenda span { color: var(--destaque-texto); }
     .passos li.passos__final { border-top-color: var(--destaque); }
+    /* Destaque das imagens do portfólio: borda sutil e sombra suave */
+    .projeto img { box-shadow: 0 0 0 1px rgba(17, 17, 17, .08), 0 10px 28px rgba(17, 17, 17, .10); transition: box-shadow .3s ease, transform .3s ease; }
+    .projeto:hover img { box-shadow: 0 0 0 1px rgba(17, 17, 17, .10), 0 16px 40px rgba(17, 17, 17, .16); transform: translateY(-3px); }
+    @media (prefers-reduced-motion: reduce) { .projeto:hover img { transform: none; } }
   </style>
 </head>
 <body>
