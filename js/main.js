@@ -3,7 +3,7 @@
   var servicos = {
     identidade: {
       nome: 'Identidade',
-      texto: 'Marcas que as pessoas reconhecem de longe: do símbolo ao jeito de aparecer em cada lugar.',
+      texto: 'Muito além de um símbolo: uma identidade que traduz, comunica e permanece.',
       itens: ['Logotipo e variações', 'Paleta de cores e tipografia', 'Manual da marca', 'Papelaria e aplicações'],
       temProjetos: true
     },
