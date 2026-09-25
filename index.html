@@ -39,6 +39,12 @@
     .projeto img { box-shadow: 0 0 0 1px rgba(17, 17, 17, .08), 0 10px 28px rgba(17, 17, 17, .10); transition: box-shadow .3s ease, transform .3s ease; }
     .projeto:hover img { box-shadow: 0 0 0 1px rgba(17, 17, 17, .10), 0 16px 40px rgba(17, 17, 17, .16); transform: translateY(-3px); }
     @media (prefers-reduced-motion: reduce) { .projeto:hover img { transform: none; } }
+    /* Selo do mascote na seção Sobre */
+    .sobre__selo { align-self: flex-start; display: inline-flex; align-items: center; gap: 14px; padding: 10px 22px 10px 10px; background: var(--superficie); border-radius: 999px; box-shadow: 0 0 0 1px rgba(17, 17, 17, .06), 0 6px 18px rgba(17, 17, 17, .08); }
+    .sobre__selo img { width: 64px; height: 64px; object-fit: cover; object-position: center 20%; border-radius: 50%; background: var(--fundo); }
+    .sobre__selo-texto { display: flex; flex-direction: column; gap: 2px; line-height: 1.25; }
+    .sobre__selo-rotulo { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--destaque-texto); }
+    .sobre__selo-nome { font-size: 15px; color: var(--texto-2); }
   </style>
 </head>
 <body>
@@ -156,6 +162,13 @@
       <h2 class="titulo-secao titulo-secao--menor">Um laboratório de ideias visuais</h2>
       <p>A Dsign Lab nasceu para transformar ideias em design que funciona — da essência da marca à forma como ela se comunica.</p>
       <p class="sobre__extra">Sou Luis, designer gráfico e fundador da Dsign Lab. Meu propósito é ajudar marcas a transformarem suas ideias em uma identidade visual que comunique, conecte e marque presença.</p>
+      <div class="sobre__selo">
+        <img src="assets/img/mascote-dsignlab.png" alt="Mascote da Dsign Lab: ilustração laranja de Luis de boné e óculos escuros, de braços cruzados" width="288" height="400" loading="lazy">
+        <div class="sobre__selo-texto">
+          <span class="sobre__selo-rotulo">Personalidade da marca</span>
+          <span class="sobre__selo-nome">O mascote da Dsign Lab</span>
+        </div>
+      </div>
     </div>
   </section>
 
